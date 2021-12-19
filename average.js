@@ -1,7 +1,6 @@
-
+let numbers = [1, Nan, 2];
 function average(numbers) {
-  filtered = numbers.filter(x => !isNaN(x))
+  let filtered = numbers.filter(x => !isNaN(x))
    return filtered.reduce((p,c) => p + c, 0)/(filtered.length);
 }
-
-module.exports = {average};
+console.log(average(numbers))
